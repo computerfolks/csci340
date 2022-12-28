@@ -41,11 +41,11 @@ In your second project you will design and implement a POSIX pthreads multithrea
 
    Overall, you have 1 main program thread, 16 worker child pthreads, and 48 worker computation pthreads.
 
-2) The input file has 16,000 numbers. Your main program thread will open and read the input file into a 16,000 element integer array 
+The input file has 16,000 numbers. Your main program thread will open and read the input file into a 16,000 element integer array 
    called InpArray. Each of the 16 worker child pthreads will be responsible for processing its own 1,000 number segment of this integer
    array as we saw in the lectures for data parallelism.
 
-3) However, what is different in this project from the lectures is that each of the 16 worker child pthreads will make available the
+However, what is different in this project from the lectures is that each of the 16 worker child pthreads will make available the
    geometric average (the nth root of the product of n numbers), the arithmetic average, and the sum for its 1,000 number segment (of
    the InpArray) to the main program thread. Please note that the worker child pthreads do not actually do the computations themselves. 
    Instead, the 3 worker computation child  pthreads (grandchildren) will do the computations while the worker child pthread (the parent) 
