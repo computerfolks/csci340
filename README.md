@@ -1,5 +1,5 @@
 # csci340
-project 1:
+PROJECT 1:
 
 Design and implement a program that, when executed, has both a parent process and a child process. You use the fork()
 system call to create a child process. The exec() system call is NOT to be used in this project. The parent and child utilize only two IPC
@@ -34,7 +34,7 @@ queue. Therefore, as an example, if -ncbm is indicated with three input files on
 
 The child process will print the counts for each file to the screen.
 
-project 2:
+PROJECT 2:
 
 
 In your second project you will design and implement a POSIX pthreads multithreaded program that, when executed, has a main program
