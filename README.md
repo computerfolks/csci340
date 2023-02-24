@@ -35,6 +35,8 @@ queue. Therefore, as an example, if -ncbm is indicated with three input files on
 The child process will print the counts for each file to the screen.
 
 project 2:
+
+
 In your second project you will design and implement a POSIX pthreads multithreaded program that, when executed, has a main program
    thread, 16 worker child pthreads, and each of the 16 worker child pthreads has its own 3 worker computation child (that is, grandchild of 
    the main) pthreads.    
